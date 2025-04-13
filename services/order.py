@@ -26,7 +26,9 @@ def create_order(
                 order=new_order,
                 row=ticket.get("row"),
                 seat=ticket.get("seat"),
-                movie_session=get_movie_session_by_id(ticket.get("movie_session"))
+                movie_session=get_movie_session_by_id(
+                    ticket.get("movie_session")
+                )
             )
 
 
