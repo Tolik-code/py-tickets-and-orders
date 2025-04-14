@@ -87,12 +87,6 @@ class Ticket(models.Model):
     row = models.IntegerField()
     seat = models.IntegerField()
 
-    def __repr__(self) -> str:
-        return (
-            f"<Ticket: {self.movie_session} "
-            f"(row: {self.row}, seat: {self.seat})>"
-        )
-
     def __str__(self) -> str:
         return f"{self.movie_session} (row: {self.row}, seat: {self.seat})"
 
